@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="">
+    <link rel="stylesheet" href="styles.css">
+    <title>survey-form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Survey Form</h1>
+            <p id="description" class="description text-center">This page contains structure of a survey form.</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label">Name</label>
+                <input type="text" id="name" placeholder="enter name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label">E-mail:</label>
+                <input type="email" id="email" placeholder="enter number" min="0" max="8" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age:<span class="clue">(optional)</span></label>
+                <input type="number" id="number" name="age" placeholder="age" min="0" max="99" class="form-control">
+            </div>
+            <div class="form-group">
+                <p>Select gender</p>
+                <label><input type="radio" name="gender" value="male" class="input-radio"> Male</label>
+                <label><input type="radio" name="gender" value="female" class="input-radio"> Female</label>
+            </div>
+            <div class="form-group">
+                <label>Choose one of your best interest</label>
+                <select id="dropdown1" name="cook" class="form-control">
+                    <option value="1">Captain cook</option>
+                    <option value="2">Justrite</option>
+                    <option value="3">Shoprite</option>
+                    <option value="4">Ojaja mall</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Which position best describes your current role?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p> What would you like to see improve?</p>
+                <label>
+                    <input id="checkbox" name="prefer" value="Front-end-projects" type="checkbox" class="input-checkbox">Front-end projects
+                    </label>
+                <label>
+                <input id="checkbox" name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Back-end projects
+                </label>
+                <label>
+                    <input id="checkbox" name="prefer" value="challenges" type="checkbox" class="input-checkbox">Challenges
+                    </label>
+                    <label>
+                        <input id="checkbox" name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Data visualization
+                        </label>
+                        <label>
+                            <input id="checkbox" name="prefer" value="videos" type="checkbox" class="input-checkbox">Video
+                            </label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <p></p>
+            <input id="submit" type="submit" class="submit-button" value="Submit">
+        </form>
+</body>
+
+</html>
